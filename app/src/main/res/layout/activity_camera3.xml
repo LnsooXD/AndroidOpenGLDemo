@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:id="@+id/mSurface" />
   </FrameLayout>
-  <android.support.v7.widget.AppCompatSeekBar
+  <androidx.appcompat.widget.AppCompatSeekBar
       android:layout_width="match_parent"
       android:layout_alignParentTop="true"
       android:id="@+id/mSeek"

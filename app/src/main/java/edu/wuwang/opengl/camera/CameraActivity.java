@@ -9,12 +9,12 @@ package edu.wuwang.opengl.camera;
 
 import android.Manifest;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import edu.wuwang.opengl.BaseActivity;
 import edu.wuwang.opengl.R;
 import edu.wuwang.opengl.utils.PermissionUtils;

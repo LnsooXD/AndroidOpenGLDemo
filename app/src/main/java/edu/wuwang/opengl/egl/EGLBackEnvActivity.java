@@ -7,36 +7,27 @@
  */
 package edu.wuwang.opengl.egl;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.ByteBuffer;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.opengl.GLES20;
-import android.opengl.GLSurfaceView;
-import android.opengl.GLUtils;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
-
+import androidx.annotation.Nullable;
 import edu.wuwang.opengl.BaseActivity;
 import edu.wuwang.opengl.R;
-import edu.wuwang.opengl.fbo.FBOActivity;
-import edu.wuwang.opengl.fbo.FBORender;
-import edu.wuwang.opengl.filter.AFilter;
 import edu.wuwang.opengl.filter.GrayFilter;
-import edu.wuwang.opengl.utils.Gl2Utils;
+
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * Description:

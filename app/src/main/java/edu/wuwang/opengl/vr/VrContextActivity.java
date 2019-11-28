@@ -8,7 +8,7 @@ import android.hardware.SensorManager;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import edu.wuwang.opengl.BaseActivity;
 import edu.wuwang.opengl.R;
 import java.util.List;

@@ -1,30 +1,28 @@
 package edu.wuwang.opengl;
 
-import edu.wuwang.opengl.blend.BlendActivity;
-import edu.wuwang.opengl.camera.Camera3Activity;
-import edu.wuwang.opengl.light.LightActivity;
-import edu.wuwang.opengl.vr.VrContextActivity;
-import java.util.ArrayList;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import edu.wuwang.opengl.blend.BlendActivity;
 import edu.wuwang.opengl.camera.Camera2Activity;
+import edu.wuwang.opengl.camera.Camera3Activity;
 import edu.wuwang.opengl.camera.CameraActivity;
 import edu.wuwang.opengl.egl.EGLBackEnvActivity;
 import edu.wuwang.opengl.etc.ZipActivity;
 import edu.wuwang.opengl.fbo.FBOActivity;
 import edu.wuwang.opengl.image.SGLViewActivity;
+import edu.wuwang.opengl.light.LightActivity;
 import edu.wuwang.opengl.obj.ObjLoadActivity;
 import edu.wuwang.opengl.obj.ObjLoadActivity2;
 import edu.wuwang.opengl.render.FGLViewActivity;
 import edu.wuwang.opengl.vary.VaryActivity;
+import edu.wuwang.opengl.vr.VrContextActivity;
+
+import java.util.ArrayList;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -36,7 +34,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mList= (RecyclerView)findViewById(R.id.mList);
-        mList.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        mList.setLayoutManager(new LinearLayoutManager(this, RecyclerView.VERTICAL,false));
         data=new ArrayList<>();
         add("绘制形体",FGLViewActivity.class);
         add("图片处理",SGLViewActivity.class);
